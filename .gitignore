@@ -1,0 +1,13 @@
+# Editor Files and Folders
+
+.idea/
+.vscode/
+*~
+\#*#
+
+# Binary Files
+
+*.o
+libasm.so
+unit_test
+
