@@ -20,13 +20,15 @@ loop:
 
     cmp BYTE [rdi], sil
     je equal
-    cmp BYTE[rdi], 0
+    cmp BYTE [rdi], 0
     je return
     inc rdi
     jmp loop
 
 equal:
     mov rax, rdi
+    cmp BYTE [rdi], 0
+    je return
     inc rdi
     jmp loop
 

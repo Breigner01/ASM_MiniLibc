@@ -21,22 +21,27 @@ CPPFLAGS	=	-iquote include
 
 NAME		=	libasm.so
 
-SRC			+=	src/strlen.asm
-SRC			+=	src/strchr.asm
-SRC			+=	src/rindex.asm
-SRC			+=	src/strcmp.asm
-SRC			+=	src/strncmp.asm
-SRC			+=	src/memset.asm
 SRC			+=	src/memcpy.asm
+SRC			+=	src/memmove.asm
+SRC			+=	src/memset.asm
+SRC			+=	src/rindex.asm
+SRC			+=	src/strcasecmp.asm
+SRC			+=	src/strchr.asm
+SRC			+=	src/strcmp.asm
 SRC			+=	src/strcspn.asm
+SRC			+=	src/strlen.asm
+SRC			+=	src/strncmp.asm
 SRC			+=	src/strpbrk.asm
 SRC			+=	src/strstr.asm
-SRC			+=	src/strcasecmp.asm
-SRC			+=	src/memmove.asm
 
 OBJ			=	$(SRC:.asm=.o)
 
-TSRC		+=
+TSRC		+=	tests/test_memcpy.c
+TSRC		+=	tests/test_memmove.c
+TSRC		+=	tests/test_memset.c
+TSRC		+=	tests/test_rindex.c
+TSRC		+=	tests/test_strchr.c
+TSRC		+=	tests/test_strlen.c
 
 TOBJ		=	$(TSRC:.c=.o)
 
