@@ -40,8 +40,14 @@ TSRC		+=	tests/test_memcpy.c
 TSRC		+=	tests/test_memmove.c
 TSRC		+=	tests/test_memset.c
 TSRC		+=	tests/test_rindex.c
+TSRC		+=	tests/test_strcasecmp.c
 TSRC		+=	tests/test_strchr.c
+TSRC		+=	tests/test_strcmp.c
+TSRC		+=	tests/test_strcspn.c
 TSRC		+=	tests/test_strlen.c
+TSRC		+=	tests/test_strncmp.c
+TSRC		+=	tests/test_strpbrk.c
+TSRC		+=	tests/test_strstr.c
 
 TOBJ		=	$(TSRC:.c=.o)
 
