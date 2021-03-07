@@ -42,5 +42,5 @@ cp_from_end:
     ret
 
 return:
-    mov rdi, rax
+    mov rax, rdi
     ret
